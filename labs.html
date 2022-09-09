@@ -1,152 +1,165 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Labs | CS1470 - Deep Learning | Brown University</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link rel="preload" as="font" type="font/woff2" href="assets/inter-latin.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="assets/krona-one-latin.woff2" crossorigin>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="random-bowties.js"></script>
-    <script type="text/javascript" src="common.js"></script>
-</head>
-
-<body>
-    <header>
-        <div class="page__header">
-            <div class="page__title">
-                <img src="assets/sparkles/sparkle4.png" />
-                Labs
-            </div>
-            <div class="page__header__quote">
-                "When I first saw Blueno, I was deeply starstruck."
-            </div>
-            <nav id="navbar">
-                <button id="hamburger" onclick="toggleMobileMenu(this)">
-                    <div id="hamburger-bar-1"></div>
-                    <div id="hamburger-bar-2"></div>
-                    <div id="hamburger-bar-3"></div>
-                </button>
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="resources.html">Resources</a>
-                <a class="nav-link" href="lectures.html">Lectures</a>
-                <a class="nav-link" href="assignments.html">Assignments</a>
-                <a class="nav-link" href="labs.html">Labs</a>
-                <a class="nav-link" href="calendar.html">Calendar &amp; Hours</a>
-                <a class="nav-link" href="staff.html">Staff</a>
-                <a class="nav-link" href="dlday.html">DL Day</a>
-            </nav>
-        </div>
-    </header>
-    <main class="dark">
-        <section style="padding-bottom: 60px;">
-            <h1>Labs</h1>
-            <!-- <p>You can view lab assignments and slots <a target="_blank"
-                    href="https://docs.google.com/spreadsheets/d/1DMvJbM-GGM_fivdl1cDFXPad4i6z3nBCmnnPZEaNcO0/edit#gid=0">here</a>.
-            </p>
-            <p>If you want to switch labs for the week, you MUST give 48 hours prior notice and email the TAs whose lab
-                you would like to swap into and your assigned lab slot's TAs.</p>
-            <p>Labs are located throughout the Sunlab (CIT 143), MS Lab (CIT 167) and CIT 201.</p>
-            <p>Labs are provided as Google Colab Notebooks.</p> -->
-            <strong> <a
-                    href="https://docs.google.com/document/d/1hnEGLUefrdM0pifmQQqsBggli4Nx8jWt/edit">Opening up labs</a></strong>
-            <br/>
-            <strong> <a
-                    href="https://docs.google.com/document/d/1_omYkEY9I2vdJ-7iU26NT2W3XkpRLA-c/edit">Colab tutorial</a>
-            </strong>
-            <br>
-            <strong>
-                Sign up for lab sections <a href="https://docs.google.com/spreadsheets/d/104KIkX5cPExNAF2NuHOOxYvZJVOPQ3euhvSP6DVmz6U/edit?usp=sharing">Here</a>
-            </strong>
-            <br></br>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Week</th>
-                        <th>Topic</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- <tr class="no-lecture">
-                        <td><br />(Sep. 4th &mdash; Sep. 6th)</td>
-                        <td> No Lab </td>
-                    </tr> -->
-                    <tr class="lab1-content">
-                        <td>Lab 1<br /> (Jan. 31st &mdash; Feb. 7th)</td>
-                        <td> 
-                            <a target='_blank' href="https://drive.google.com/drive/folders/112wjj7OMINDK1eLWQl8errl-kTFzX9z-?usp=sharing">Introduction to Python</a>
-                            <!-- Introduction to Python -->
-                        </td>
-                    </tr>
-                    <tr class="lab2-content">
-                        <td>Lab 2<br /> (Feb. 7th &mdash; Feb. 14th)</td>
-                        <td>
-                            <a target="_blank" href="https://drive.google.com/drive/u/0/folders/1aI4FaIp7iXCMTGkWV98-Y3YzueHjZI-6">Introduction to Machine Learning</a>
-                            <!--Introduction to Machine Learning-->
-                        </td>
-                    </tr>
-                    <tr class="lab3-content">
-                        <td>Lab 3<br /> (Feb. 14th &mdash; Feb. 23rd)</td>
-                        <td>
-                            <a target="_blank" href="https://drive.google.com/drive/folders/1ZvzPNZbRoKWJrTzWE9aMHA0wpZtr_m9z?usp=sharing">Intro To Tensorflow</a>
-                        </td>
-                    </tr>
-                    <tr class="lab4-content">
-                        <td>Lab 4<br /> (Feb. 22nd &mdash; Feb. 28th)</td>
-                        <td>
-                            <a target="_blank" href="https://drive.google.com/drive/folders/1FmQ0mbOtCBrNXz_cAm39dsTYs-L_McpM?usp=sharing">Convolutional Neural Networks</a>
-                        </td>
-                    </tr>
-                    <tr class="lab5-content">
-                        <td>Lab 5<br /> (Mar. 7th &mdash; Mar. 14th)</td>
-                        <td>
-                            <a target="_blank" href="https://drive.google.com/drive/folders/1_eHEHtosFigyXTCTyzJr6R0NMPpaBMyb?usp=sharing">word2vec Skipgram</a>
-                        </td>
-                    </tr>
-                    <tr class="lab6-content">
-                        <td>Lab 6<br /> (Mar. 14th &mdash; Mar. 21st)</td>
-                        <td>
-                            <a target="_blank" href="https://drive.google.com/drive/folders/17qBfxCTT2kGAqhKDDzqme2FR5JWMoDZ3?usp=sharing">Debiasing Language Models</a>
-                        </td>
-                    </tr>
-                    <tr class="lab7-content">
-                        <td>Lab 7<br /> (Apr. 4th &mdash; Apr. 11th)</td>
-                        <td>
-                            <a target="_blank" href="https://drive.google.com/drive/folders/1V4tsrx8Kt-ZqqmKKOCcVRfGxZxEUjt_n?usp=sharing">Convolutional Autoencoders</a>
-                        </td>
-                    </tr>
-                    <tr class="lab8-content">
-                        <td>Lab 8<br /> (Apr. 11th &mdash; Apr. 18th)</td>
-                        <td>
-                            <a target="_blank" href="https://drive.google.com/drive/folders/11iSB5kees1E3RBccnnOgk5h7cxmdDu_S?usp=sharing">Generative Adversarial Networks</a>
-<!--                             Generative Adversarial Networks -->
-                        </td>
-                    </tr>
-                    <tr class="lab9-content">
-                        <td>Lab 9<br /> (Apr. 18th &mdash; Apr. 25th)</td>
-                        <td>
-                            <a target="_blank" href="https://drive.google.com/drive/folders/17Gd-Az3zyxYu705VGO5w10rppIzvHJvS?usp=sharing">Optimizers</a>
-<!--                             Optimizers -->
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-
-    <footer class="dark-footer">
-        <img id="footer-earmuffs" class="random-earmuffs" src="img/sparkle.png">
-        <ul class="menu">
-            <li>&copy; 2022 CS1470 TA Staff | Computer Science Department | Brown University</li>
-        </ul>
-        <br>
-    </footer>
-</body>
-
+  <title>
+    Redirecting to https://brown-deep-learning.github.io/dl-website-f22/labs
+  </title>
+  <meta
+    http-equiv="refresh"
+    content="0; URL=https://brown-deep-learning.github.io/dl-website-f22/labs"
+  />
+  <link
+    rel="canoncial"
+    href="https://brown-deep-learning.github.io/dl-website-f22/labs"
+  />"
+  <!-- <head> -->
+  <!-- <title>Labs | CS1470 - Deep Learning | Brown University</title> -->
+  <!-- <meta charset="utf-8" /> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="preload" as="font" type="font/woff2" href="assets/inter-latin.woff2" crossorigin> -->
+  <!-- <link rel="preload" as="font" type="font/woff2" href="assets/krona-one-latin.woff2" crossorigin> -->
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" -->
+  <!-- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" -->
+  <!-- crossorigin="anonymous"></script> -->
+  <!-- <script type="text/javascript" src="random-bowties.js"></script> -->
+  <!-- <script type="text/javascript" src="common.js"></script> -->
+  <!-- </head> -->
+  <!--  -->
+  <!-- <body> -->
+  <!-- <header> -->
+  <!-- <div class="page__header"> -->
+  <!-- <div class="page__title"> -->
+  <!-- <img src="assets/sparkles/sparkle4.png" /> -->
+  <!-- Labs -->
+  <!-- </div> -->
+  <!-- <div class="page__header__quote"> -->
+  <!-- "When I first saw Blueno, I was deeply starstruck." -->
+  <!-- </div> -->
+  <!-- <nav id="navbar"> -->
+  <!-- <button id="hamburger" onclick="toggleMobileMenu(this)"> -->
+  <!-- <div id="hamburger-bar-1"></div> -->
+  <!-- <div id="hamburger-bar-2"></div> -->
+  <!-- <div id="hamburger-bar-3"></div> -->
+  <!-- </button> -->
+  <!-- <a class="nav-link" href="index.html">Home</a> -->
+  <!-- <a class="nav-link" href="resources.html">Resources</a> -->
+  <!-- <a class="nav-link" href="lectures.html">Lectures</a> -->
+  <!-- <a class="nav-link" href="assignments.html">Assignments</a> -->
+  <!-- <a class="nav-link" href="labs.html">Labs</a> -->
+  <!-- <a class="nav-link" href="calendar.html">Calendar &amp; Hours</a> -->
+  <!-- <a class="nav-link" href="staff.html">Staff</a> -->
+  <!-- <a class="nav-link" href="dlday.html">DL Day</a> -->
+  <!-- </nav> -->
+  <!-- </div> -->
+  <!-- </header> -->
+  <!-- <main class="dark"> -->
+  <!-- <section style="padding-bottom: 60px;"> -->
+  <!-- <h1>Labs</h1> -->
+  <!-- <!-- <p>You can view lab assignments and slots <a target="_blank" -->
+  <!-- href="https://docs.google.com/spreadsheets/d/1DMvJbM-GGM_fivdl1cDFXPad4i6z3nBCmnnPZEaNcO0/edit#gid=0">here</a>. -->
+  <!-- </p> -->
+  <!-- <p>If you want to switch labs for the week, you MUST give 48 hours prior notice and email the TAs whose lab -->
+  <!-- you would like to swap into and your assigned lab slot's TAs.</p> -->
+  <!-- <p>Labs are located throughout the Sunlab (CIT 143), MS Lab (CIT 167) and CIT 201.</p> -->
+  <!-- <p>Labs are provided as Google Colab Notebooks.</p> -->
+  -->
+  <!-- <strong> <a -->
+  <!-- href="https://docs.google.com/document/d/1hnEGLUefrdM0pifmQQqsBggli4Nx8jWt/edit">Opening up labs</a></strong> -->
+  <!-- <br/> -->
+  <!-- <strong> <a -->
+  <!-- href="https://docs.google.com/document/d/1_omYkEY9I2vdJ-7iU26NT2W3XkpRLA-c/edit">Colab tutorial</a> -->
+  <!-- </strong> -->
+  <!-- <br> -->
+  <!-- <strong> -->
+  <!-- Sign up for lab sections <a href="https://docs.google.com/spreadsheets/d/104KIkX5cPExNAF2NuHOOxYvZJVOPQ3euhvSP6DVmz6U/edit?usp=sharing">Here</a> -->
+  <!-- </strong> -->
+  <!-- <br></br> -->
+  <!-- <table> -->
+  <!-- <thead> -->
+  <!-- <tr> -->
+  <!-- <th>Week</th> -->
+  <!-- <th>Topic</th> -->
+  <!-- </tr> -->
+  <!-- </thead> -->
+  <!-- <tbody> -->
+  <!-- <!-- <tr class="no-lecture"> -->
+  <!-- <td><br />(Sep. 4th &mdash; Sep. 6th)</td> -->
+  <!-- <td> No Lab </td> -->
+  <!-- </tr> -->
+  -->
+  <!-- <tr class="lab1-content"> -->
+  <!-- <td>Lab 1<br /> (Jan. 31st &mdash; Feb. 7th)</td> -->
+  <!-- <td>  -->
+  <!-- <a target='_blank' href="https://drive.google.com/drive/folders/112wjj7OMINDK1eLWQl8errl-kTFzX9z-?usp=sharing">Introduction to Python</a> -->
+  <!-- [> Introduction to Python <] -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- <tr class="lab2-content"> -->
+  <!-- <td>Lab 2<br /> (Feb. 7th &mdash; Feb. 14th)</td> -->
+  <!-- <td> -->
+  <!-- <a target="_blank" href="https://drive.google.com/drive/u/0/folders/1aI4FaIp7iXCMTGkWV98-Y3YzueHjZI-6">Introduction to Machine Learning</a> -->
+  <!-- [>Introduction to Machine Learning<] -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- <tr class="lab3-content"> -->
+  <!-- <td>Lab 3<br /> (Feb. 14th &mdash; Feb. 23rd)</td> -->
+  <!-- <td> -->
+  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1ZvzPNZbRoKWJrTzWE9aMHA0wpZtr_m9z?usp=sharing">Intro To Tensorflow</a> -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- <tr class="lab4-content"> -->
+  <!-- <td>Lab 4<br /> (Feb. 22nd &mdash; Feb. 28th)</td> -->
+  <!-- <td> -->
+  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1FmQ0mbOtCBrNXz_cAm39dsTYs-L_McpM?usp=sharing">Convolutional Neural Networks</a> -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- <tr class="lab5-content"> -->
+  <!-- <td>Lab 5<br /> (Mar. 7th &mdash; Mar. 14th)</td> -->
+  <!-- <td> -->
+  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1_eHEHtosFigyXTCTyzJr6R0NMPpaBMyb?usp=sharing">word2vec Skipgram</a> -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- <tr class="lab6-content"> -->
+  <!-- <td>Lab 6<br /> (Mar. 14th &mdash; Mar. 21st)</td> -->
+  <!-- <td> -->
+  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/17qBfxCTT2kGAqhKDDzqme2FR5JWMoDZ3?usp=sharing">Debiasing Language Models</a> -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- <tr class="lab7-content"> -->
+  <!-- <td>Lab 7<br /> (Apr. 4th &mdash; Apr. 11th)</td> -->
+  <!-- <td> -->
+  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1V4tsrx8Kt-ZqqmKKOCcVRfGxZxEUjt_n?usp=sharing">Convolutional Autoencoders</a> -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- <tr class="lab8-content"> -->
+  <!-- <td>Lab 8<br /> (Apr. 11th &mdash; Apr. 18th)</td> -->
+  <!-- <td> -->
+  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/11iSB5kees1E3RBccnnOgk5h7cxmdDu_S?usp=sharing">Generative Adversarial Networks</a> -->
+  <!-- [>                             Generative Adversarial Networks <] -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- <tr class="lab9-content"> -->
+  <!-- <td>Lab 9<br /> (Apr. 18th &mdash; Apr. 25th)</td> -->
+  <!-- <td> -->
+  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/17Gd-Az3zyxYu705VGO5w10rppIzvHJvS?usp=sharing">Optimizers</a> -->
+  <!-- [>                             Optimizers <] -->
+  <!-- </td> -->
+  <!-- </tr> -->
+  <!-- </tbody> -->
+  <!-- </table> -->
+  <!-- </section> -->
+  <!-- </main> -->
+  <!--  -->
+  <!-- <footer class="dark-footer"> -->
+  <!-- <img id="footer-earmuffs" class="random-earmuffs" src="img/sparkle.png"> -->
+  <!-- <ul class="menu"> -->
+  <!-- <li>&copy; 2022 CS1470 TA Staff | Computer Science Department | Brown University</li> -->
+  <!-- </ul> -->
+  <!-- <br> -->
+  <!-- </footer> -->
+  <!-- </body> -->
+  <!--  -->
+  <!-- </html> -->
 </html>
